@@ -1145,3 +1145,65 @@ body {
 	margin-top: 60px;
 }
 
+/* contact-us */
+
+.contact-us-img {
+	background-image: url(photo/fashion.png);
+	padding-top: 40%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.contact-form {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+.form-row {
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr);
+	column-gap: 30px;
+	}
+
+	.contact-form {
+		display: grid;
+		row-gap: 20px;
+	}
+}
+
+.input-control {
+	position: relative;
+}
+
+.input {
+	border: 1px solid grey;
+	padding: 10px 20px;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.input:focus-visible {
+	outline-color: var(--title);
+}
+
+.label {
+	position: absolute;
+	left: 20px;
+	transform: translatey(7px);
+	color: #bbb8b8;
+	background-color: #FFFFFF;
+	transition: all 0.3s;
+	padding: 3px 5px;
+}
+
+.input:focus + .label {
+	color: var(--title);
+	font-size: 16px;
+	transform: translatey(-10px) scale(0.8);
+}
+
